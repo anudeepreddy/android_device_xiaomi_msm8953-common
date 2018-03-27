@@ -110,6 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440 \
     sdm.debug.disable_skip_validate=1 \
     sdm.debug.rotator_downscale=1 \
+    vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.perf_hint_window=50 \
     video.accelerate.hw=1 \
