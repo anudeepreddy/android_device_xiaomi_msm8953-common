@@ -54,6 +54,7 @@ on fs
     chmod 0770 /persist/rfs/apq
     chmod 0770 /persist/rfs/apq/gnss
     chmod 0770 /persist/hlos_rfs
+    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
     restorecon_recursive /persist
 
 on init
