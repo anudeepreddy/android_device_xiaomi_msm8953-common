@@ -178,15 +178,6 @@ ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1
 
-# Security patch level
-ifneq ($(BOARD_VENDORIMAGE_PARTITION_SIZE),)
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.build.security_patch=2018-07-01
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.lineage.build.vendor_security_patch=2018-07-01
-endif
-
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
