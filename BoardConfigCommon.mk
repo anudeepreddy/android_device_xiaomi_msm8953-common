@@ -186,7 +186,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_USE_SDCLANG := true
 
 # RIL
-#TARGET_RIL_VARIANT := caf
+TARGET_RIL_VARIANT := caf
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
@@ -196,8 +196,8 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 endif
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_VERS := 28.0
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_VERS := 28.0
 #BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Security patch level
