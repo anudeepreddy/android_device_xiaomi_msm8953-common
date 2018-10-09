@@ -126,6 +126,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
 
+#Camera Sounds
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/camsounds/camera_click.ogg:system/product/media/audio/ui/camera_click.ogg \
+    $(LOCAL_PATH)/camsounds/camera_focus.ogg:system/product/media/audio/ui/camera_focus.ogg \
+    $(LOCAL_PATH)/camsounds/VideoStop.ogg:system/product/media/audio/ui/VideoStop.ogg \
+    $(LOCAL_PATH)/camsounds/VideoRecord.ogg:system/product/media/audio/ui/VideoRecord.ogg
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
