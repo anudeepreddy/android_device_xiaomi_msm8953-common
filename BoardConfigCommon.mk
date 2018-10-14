@@ -201,6 +201,9 @@ endif
 TARGET_LD_SHIM_LIBS := \
     /system/lib64/lib-imsvideocodec.so|libshim_ims.so
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := persist
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_VERS := 28.0
