@@ -406,7 +406,6 @@ vendor/lib/libgsl.so|2849df0ee52249c7d6e5ed869df064eff910c12c
 vendor/lib/libhdr_tm.so|37ac96055e1fcb2d1a3b4507ba62760ca30915b3
 vendor/lib/libllvm-glnext.so|e052efb651cee5b8e6c46cc819c5ce3f902424d2
 vendor/lib/libllvm-qcom.so|826fd36b002899d55d5680f32fb942b3fe17e020
-vendor/lib/libmm-hdcpmgr.so|1ece57120c97c2f1168950ca7469460caaa4e954
 vendor/lib/librs_adreno.so|41b2a1b35a8a9966728cea607bf5b7a8f568680d
 vendor/lib/librs_adreno_sha1.so|8e23f3b5bde889b846a2aa5702c21960f5359c7a
 vendor/lib/libscalar.so|d8fa500e6a1250c1f5e251ec9bbe44177a5352b8
@@ -427,7 +426,6 @@ vendor/lib64/libgsl.so|39bbfb10ef6c20feab0162ca2078d6bdab64ba6f
 vendor/lib64/libhdr_tm.so|f4c0fe6a734077666ec5e10f68577f70a26cd2d2
 vendor/lib64/libllvm-glnext.so|f2bfdf89502315b8bcf98f90d8a14b93308fb9ae
 vendor/lib64/libllvm-qcom.so|af571c2113bf5b74e58a808a33e4ec4e57915088
-vendor/lib64/libmm-hdcpmgr.so|f42daaad4741e87db5f4e11633a0b7a8f8eba687
 vendor/lib64/librs_adreno.so|b6bc2274fc4079818f3124a694348a890c5d7b07
 vendor/lib64/librs_adreno_sha1.so|6c83309f281f220ea1c733af3d67403402f4c751
 vendor/lib64/libscalar.so|fa8715f4ef91443744e921cf7912516a677c9f9d
@@ -529,10 +527,6 @@ vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
-
-# Modem
-vendor/lib/libwms.so
-vendor/lib64/libwms.so
 
 # Perf
 lib/libqti_performance.so
