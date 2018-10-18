@@ -853,7 +853,7 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Wi-Fi
-vendor/bin/wcnss_service|183c15394d1d6df2e5f6d712df80b2b2aa9f5ea6
+vendor/bin/wcnss_service
 
 # Wi-Fi Display
 -app/WfdService/WfdService.apk
