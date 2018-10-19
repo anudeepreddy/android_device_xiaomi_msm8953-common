@@ -47,7 +47,6 @@ on post-fs-data
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
     mkdir /persist/qti_fp 0700 system system
-    mkdir /data/misc/seemp 0700 system system
     mkdir /data/misc/audio_pp 0771 media audio
 
 #Create folder for mm-qcamera-daemon
@@ -107,9 +106,6 @@ service wcnss-service /vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
-on property:vold.decrypt=trigger_restart_framework
-    start imsstarter
-
 ## imsqmidaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
     class main
@@ -117,10 +113,6 @@ service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio log diag
     writepid /dev/cpuset/system-background/tasks
-    disabled
-
-on property:service.qti.ims.enabled=1
-    start imsqmidaemon
 
 # imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
@@ -194,6 +186,7 @@ on boot
 	write /dev/cpuset/foreground/cpus 0-6
 	write /dev/cpuset/foreground/boost/cpus 0-6
 	write /dev/cpuset/background/cpus 0-1
+	write /dev/cpuset/restricted/cpus 0-3
 	write /dev/cpuset/system-background/cpus 0-3
 	write /dev/cpuset/restricted/cpus 0-3
 

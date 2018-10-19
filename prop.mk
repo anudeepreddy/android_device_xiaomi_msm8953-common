@@ -87,8 +87,10 @@ ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=480 \
 sdm.debug.disable_skip_validate=1 \
+sdm.debug.rotator_downscale=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
-vendor.display.disable_skip_validate=1
+vendor.display.disable_skip_validate=1 \
+vendor.display.perf_hint_window=50
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -164,18 +166,14 @@ persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=0 \
-persist.radio.aosp_usr_pref_sel=true \
+persist.radio.schd.cache=3500 \
 persist.radio.apm_sim_not_pwdn=1 \
 persist.radio.calls.on.ims=0 \
 persist.radio.csvt.enabled=false \
-persist.radio.DROPSETENABLE=1 \
-persist.radio.force_on_dc=true \
-persist.radio.ignore_dom_time=5 \
 persist.radio.hw_mbn_update=0 \
 persist.radio.jbims=0 \
 persist.radio.mt_sms_ack=20 \
 persist.radio.multisim.config=dsds \
-persist.radio.schd.cache=3500 \
 persist.radio.sw_mbn_update=0 \
 persist.radio.videopause.mode=1 \
 persist.vendor.radio.custom_ecc=1 \
@@ -185,10 +183,9 @@ ril.subscription.types=NV,RUIM \
 rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=20 \
+ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1 \
-persist.vendor.ims.dropset_feature=0
+telephony.lteOnCdmaDevice=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -205,3 +202,16 @@ persist.sys.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# Dex2oat threads for faster app installation
+# Use all 8 Cores/Threads of our CPU
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dex2oat-threads=8 \
+dalvik.vm.image-dex2oat-threads=8 \
+debug.generate-debug-info=false
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
