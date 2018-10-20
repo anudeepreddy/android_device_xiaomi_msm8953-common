@@ -186,11 +186,11 @@ PRODUCT_COPY_FILES += \
 
 # Healthd
 PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-service.msm8953 \
     chargeonlymode
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service
+DEVICE_FRAMEWORK_MANIFEST_FILE += \
+    system/libhidl/vintfdata/manifest_healthd_exclude.xml
 
 # HIDL
 PRODUCT_PACKAGES += \

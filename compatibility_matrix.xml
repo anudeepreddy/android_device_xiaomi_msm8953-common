@@ -31,7 +31,7 @@
             <instance>vr</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.health</name>
         <version>2.0</version>
         <interface>
