@@ -858,9 +858,6 @@ vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# Wi-Fi - from vince
-vendor/bin/wcnss_service
-
 # Wi-Fi Display - from vince
 -app/WfdService/WfdService.apk
 bin/wfdservice
