@@ -32,3 +32,7 @@
 
 # Healthd
 /vendor/bin/hw/android\.hardware\.health@2\.0-service.msm8953			u:object_r:hal_health_default_exec:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl.0(/.*)?              u:object_r:sysfs_kcal:s0
+
