@@ -300,6 +300,13 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -308,11 +315,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libcnefeatureconfig \
-    libxml2 \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -330,6 +333,14 @@ PRODUCT_COPY_FILES += \
 # Shim
 PRODUCT_PACKAGES += \
     libshim_ims
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
