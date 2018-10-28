@@ -26,8 +26,8 @@ static inline const char* BtmGetDefaultName()
     property_get("ro.product.device", product_device, "");
      if (strstr(product_device, "mido"))
         return "Xiaomi Redmi Note 4";
-    if (strstr(product_device, "tissot"))
-        return "Xiaomi MI A1";
+    if (strstr(product_device, "vince"))
+        return "Xiaomi Redmi 5 Plus";
      // Fallback to ro.product.model
     return "";
 }
