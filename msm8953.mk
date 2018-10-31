@@ -177,8 +177,6 @@ PRODUCT_PACKAGES += \
     libcurl \
     libgnss \
     libgnsspps \
-    libloc_core \
-    libloc_pla \
     libsensorndkbridge
 
 
