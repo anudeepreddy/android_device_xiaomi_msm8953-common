@@ -151,6 +151,20 @@ TARGET_EXFAT_DRIVER := sdfat
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
+# Hals hax
+QCOM_HARDWARE_VARIANT := msm8996
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+TARGET_POWER_HAL := true
+#TARGET_RIL_VARIANT := caf
+BOARD_USES_AOSP_WLAN_HAL := true
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/audio-caf-$(QCOM_HARDWARE_VARIANT) \
+    hardware/qcom/display-caf-$(QCOM_HARDWARE_VARIANT) \
+    hardware/qcom/media-caf-$(QCOM_HARDWARE_VARIANT)
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(VENDOR_PATH)/compatibility_matrix.xml
@@ -161,10 +175,6 @@ HWUI_COMPILE_FOR_PERF := true
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8953
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
-
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += \
-    $(VENDOR_PATH)/lineagehw
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -189,9 +199,6 @@ TARGET_HAS_NO_WLAN_STATS := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USE_SDCLANG := true
 
-# RIL
-TARGET_RIL_VARIANT := caf
-
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.qcom
@@ -209,7 +216,7 @@ BOARD_ROOT_EXTRA_FOLDERS := persist
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_VERS := 28.0
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-07-01
