@@ -388,4 +388,23 @@
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">107</integer>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
+    <bool name="config_displayBlanksAfterDoze">true</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
+    app standby.  These are not enabled by default because they require a standard
+    cloud-to-device messaging service for apps to interact correctly with the modes
+    (such as to be able to deliver an instant message to the device even when it is
+    dozing).  This should be enabled if you have such services and expect apps to
+    correctly use them when installed on your device.  Otherwise, keep this disabled
+    so that applications can still use their own mechanisms. -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
 </resources>
