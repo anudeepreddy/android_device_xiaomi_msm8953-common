@@ -50,7 +50,6 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 # AptX - from Nokia 7 Plus Onyx_00WW-user 9 PPR1.180610.011 00WW_3_22C release-keys
 vendor/lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
 vendor/lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
-
 # Audio
 vendor/etc/drc/drc_cfg_5.1.txt
 vendor/etc/drc/drc_cfg_AZ.txt
@@ -239,20 +238,67 @@ vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|52656ab77fa9e326e914d4b15aea18fa7e214
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|05af4880ad4c633fe60750ff49525e62822585f7
 
 # DRM
+lib/libGPTEE_system.so
+lib/libQTEEConnector_system.so
+lib/vendor.qti.hardware.qteeconnector@1.0.so
+lib64/libGPTEE_system.so
+lib64/libQTEEConnector_system.so
+lib64/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/bin/hw/android.hardware.drm@1.0-service.widevine
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/bin/qseecomd
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
+vendor/lib/libbase64.so
+vendor/lib/libcppf.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libGPreqcancel.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
+vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/librmp.so
+vendor/lib/librpmb.so
+vendor/lib/libsdedrm.so
+vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libSecureUILib.so
+vendor/lib/libsi.so
+vendor/lib/libssd.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libtzdrmgenprov.so
+vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
+vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
+vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
+vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
+vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
+vendor/lib64/libbase64.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libqisl.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
+vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libsi.so
 vendor/lib64/libssd.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libtzdrmgenprov.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 
 # ESE-Powermanager - from Nokia 7 Plus Onyx_00WW-user 9 PPR1.180610.011 00WW_3_22C release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|b1a238ace50739969170f72ceec136e514952e6b
@@ -438,32 +484,56 @@ vendor/lib64/hw/keystore.msm8953.so
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.msm8953.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib64/vendor.qti.voiceprint@1.0.so
+vendor/lib/hw/sound_trigger.primary.msm8953.so
+vendor/lib64/libgcs-calwrapper.so
+vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
+vendor/lib64/libgcs.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
 
 # Media
+lib/libmmosal.so
+lib/vendor.qti.hardware.vpp@1.1.so
+lib64/libmmosal.so
+lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/libAlacSwDec.so
+vendor/lib/libApeSwDec.so
+vendor/lib/libdsd2pcm.so
+vendor/lib/libFlacSwDec.so
+-vendor/lib/libgpustats.so
+vendor/lib/libvpplibrary.so
 vendor/lib/libI420colorconvert.so
-vendor/lib/libmmosal_proprietary.so
+vendor/lib/libmm-color-convertor.so
 vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxVpp.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
 vendor/lib/libOmxAmrDec.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxDsdDec.so
+vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
--vendor/lib/libgpustats.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
+vendor/lib/libvpptestutils.so
+vendor/lib/vendor.qti.hardware.vpp@1.1_vendor.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libFlacSwDec.so
+-vendor/lib64/libgpustats.so
 vendor/lib64/libI420colorconvert.so
+vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
@@ -472,41 +542,59 @@ vendor/lib64/libOmxAmrwbplusDec.so
 vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxApeDecSw.so
 vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
--vendor/lib64/libgpustats.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
+vendor/lib64/libvpptestutils.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
 
 # Perf
--lib/vendor.qti.hardware.iop@1.0.so
+lib/libqti_performance.so
 lib/vendor.qti.hardware.perf@1.0.so
--lib64/vendor.qti.hardware.iop@1.0.so
+lib/libqti-perfd-client_system.so
+lib64/libqti_performance.so
 lib64/vendor.qti.hardware.perf@1.0.so
+lib64/libqti-perfd-client_system.so
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
 vendor/bin/energy-awareness
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/bin/msm_irqbalance
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
+vendor/etc/perf/gamedwhitelist.xml
 vendor/etc/perf/perfboostsconfig.xml
-vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so
 vendor/lib/libfeedbackhandler.so
 vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-iopd-client.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
-vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so
+vendor/lib/libqti-utils.so
+vendor/lib/libqti-gt-prop.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so
 vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so
-vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so
+vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.iop@2.0_vendor.so
+vendor/lib/vendor.qti.hardware.limits@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.wipower@1.0_vendor.so
 vendor/lib64/libfeedbackhandler.so
 vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
-vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
+vendor/lib64/libqti-utils.so
+vendor/lib64/libqti-gt-prop.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so
+vendor/lib64/vendor.qti.hardware.limits@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -544,13 +632,9 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
 vendor/etc/public.libraries.txt
 
 # QMI
+vendor/bin/irsc_util
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
-lib/libdiag_system.so
-lib/libqmi_cci_system.so
-lib64/libdiag_system.so
-lib64/libqmi_cci_system.so
-vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -558,15 +642,18 @@ vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
-vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
+lib/libqmi_cci_system.so
+lib64/libqmi_cci_system.so
 vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
+vendor/lib/libqmi.so
 vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
+vendor/lib/libUserAgent.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -574,23 +661,18 @@ vendor/lib64/libidl.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
-vendor/lib64/libqmi.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmi.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
+vendor/lib64/libUserAgent.so
 
-# QTEE
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
-
-# Radio
+# Radio - from vince
 -app/QtiTelephonyService/QtiTelephonyService.apk|7d7104c26c7c1e9487d9c41d48f0e0348135cb61
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
@@ -639,7 +721,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
-# Radio - IMS
+# Radio - IMS - from vince
 -app/ims/ims.apk:vendor/app/ims/ims.apk|406f0c50b44480789072222a6ba120894dc02394
 -app/uceShimService/uceShimService.apk
 etc/permissions/qti-vzw-ims-internal.xml
@@ -723,18 +805,18 @@ vendor/firmware/a506_zap.mdt
 vendor/firmware/a506_zap.elf
 
 # Thermal - from sakura
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-engine-high.conf
-vendor/etc/thermal-engine-nolimits.conf
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-normal.conf
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
-vendor/lib/hw/thermal.msm8953.so
-vendor/lib64/libthermalfeature.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
-vendor/lib64/hw/thermal.msm8953.so
+vendor/etc/thermal-engine.conf|7532b44fef09e97ee0056d6169a21ea336893eb5
+vendor/etc/thermal-engine-high.conf|872435622048fb785c809815e84cbac8522dd9bf
+vendor/etc/thermal-engine-nolimits.conf|aa454ca4101c4148edbb33db327a5329da5bc4c0
+vendor/etc/thermal-engine-map.conf|8cee010443a42052353f3134894dc8d6b2280a23
+vendor/etc/thermal-engine-normal.conf|6e61943332d1e0b26c0436f2d819f5a1a43dd1a5
+vendor/bin/thermal-engine|79a70bd55d5b732e2164eec3e31532ac7c1a223c
+-vendor/lib/libthermalclient.so|a516e6f9c8000f5a2dabc6b9a1e8d69e9d2d1374
+vendor/lib/hw/thermal.msm8953.so|edf5747d5774853dc8594ed6e5d2cd6d02672778
+vendor/lib64/libthermalfeature.so|655a4b39b45a80069d7d8706a921ee0ace3a4865
+-vendor/lib64/libthermalclient.so|5b5dcfc714a31a65e1757ef786e697b1a69e012e
+vendor/lib64/libthermalioctl.so|b2c17563f56aaa2080f77b7381f553335c641fe0
+vendor/lib64/hw/thermal.msm8953.so|11c1e8383088e322ab102ce97d80afd045542983
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
@@ -742,13 +824,13 @@ vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
 
-# Widevine
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
+# WideWine
 vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Wi-Fi Display
--app/WfdService/WfdService.apk
+-priv-app/WfdService/WfdService.apk
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
