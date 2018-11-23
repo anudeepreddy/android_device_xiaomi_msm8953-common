@@ -200,8 +200,8 @@ on boot
     mkdir /persist/display 0770 system graphics
     
     # DT2W
-    chmod 0666 /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture
-    chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input1/wake_gesture
+    chmod 0666 /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture
+    chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture
 
 # msm specific files that need to be created on /data
 on post-fs-data
