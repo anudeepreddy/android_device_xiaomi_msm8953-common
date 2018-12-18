@@ -85,16 +85,14 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
-    libtinyalsa \
-    libtinycompress \
-    libtinyxml \
     tinymix
 
 # for HIDL related packages
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
+    android.hardware.audio@4.0-impl \
     android.hardware.audio@2.0-service \
-    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio.effect@4.0-impl \
+    android.hardware.audio.effect@2.0-service \
     android.hardware.soundtrigger@2.1-impl
 
 # Audio configuration
@@ -125,6 +123,13 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
+
+#Camera Sounds
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/camsounds/camera_click.ogg:system/product/media/audio/ui/camera_click.ogg \
+    $(LOCAL_PATH)/camsounds/camera_focus.ogg:system/product/media/audio/ui/camera_focus.ogg \
+    $(LOCAL_PATH)/camsounds/VideoStop.ogg:system/product/media/audio/ui/VideoStop.ogg \
+    $(LOCAL_PATH)/camsounds/VideoRecord.ogg:system/product/media/audio/ui/VideoRecord.ogg
 
 # Configstore
 PRODUCT_PACKAGES += \
